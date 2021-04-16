@@ -97,7 +97,7 @@ h4 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .grid-logo {
         margin: 5px;
         padding: 10px;
