@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-name {
+    background-color: silver;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.nav-header {
+    display: inline-block;
+}
+
+.nav-header {
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a {color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+#about, #service {
+    margin: 1%;
+    padding: 10px;
+}
+
+.central-section {
+    display: flex;
+    }
+
+.central-part1, .central-part2 {
+    margin: 5px;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.central-part1 {
+    box-sizing: border-box;
+}
+
+.grid-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(109, 109, 243);
+}
+
+.footer-part {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+}
+
+h4 {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.footer-link {
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    li.nav-header {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .central-section {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-logo {
+        margin: 5px;
+        padding: 10px;
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .grid-logo img {
+        margin-left: 25px;
+        padding: 30px;
+    }
+    .footer-part {
+        display: block;
+        text-align: center;
+        margin-left: 30px;
+        padding-left: 120px;
+        justify-content: center;
+    }
+}
