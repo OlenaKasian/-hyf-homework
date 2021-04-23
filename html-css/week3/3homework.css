@@ -1,0 +1,86 @@
+body {
+    max-width: 800px;
+    margin: 0 10px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+header, section, aside {
+    max-width: 1200px;
+    margin: 10px;
+}
+
+.navigation {
+    float: right;
+}
+
+.navigation ::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    font-size: 18px;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.progress {
+    position: relative;
+    border: 2px solid #dadce0;
+    padding: 2px;
+    width: 300px;
+    height: 45px;
+    border-radius: 28px;
+}
+
+span {
+    display: block;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgb(178, 223, 57);
+}
+
+.interest{font-size: 26px;
+font-weight: bold;
+font-style: italic;
+color: rgb(7, 136, 29);
+}
+
+.interest-things {
+
+margin: 0 5px;
+padding: 2px;}
+
+.stylish {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .stylish {
+        margin: 0 20px;
+        padding: 10px;
+    }
+    .img-style {
+        margin: 5px 15px;
+        padding: 0 20px;
+    }
+}
