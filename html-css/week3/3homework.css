@@ -63,9 +63,9 @@ color: rgb(7, 136, 29);
 }
 
 .interest-things {
-
-margin: 0 5px;
-padding: 2px;}
+margin: 0 2px;
+padding: 2px;
+}
 
 .stylish {
     display: flex;
