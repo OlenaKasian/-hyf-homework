@@ -56,15 +56,15 @@ span {
     background-color: rgb(178, 223, 57);
 }
 
-.interest{font-size: 26px;
+.interest{font-size: 22px;
 font-weight: bold;
 font-style: italic;
 color: rgb(7, 136, 29);
 }
 
 .interest-things {
-margin: 0px;
-padding: 0px;
+margin: 2px;
+padding: 2px;
 }
 
 .stylish {
