@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="https://raw.githubusercontent.com/OlenaKasian/hyf-homework/master/html-css/week3/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="3homework.css">
+    <title>Home work-week3-page2-Olena Kasiianenko</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/Earlybirds.png" alt="Icon Earlybirds">
+        <nav class="navigation">
+            <ul>
+                <li><a href="index3.html">Step 1</a></li>
+                <li><a href="index3page2.html">Step 2</a></li>
+                <li><a href="index3page3.html">Step 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Sign up to yourcustomtailor.com</h3>
+    </section>
+    <mian>
+        <h3>Step 2/4 - tell us who you are?</h3>
+        <p>Progress</p>
+        <div class="progress"><span style="width: 50%"> </span></div>
+        <p>We will probably need to stay in touch somehow.Let is know how we can raech you</p>
+        <form action="">
+            <label for="email">Email*</label><br>
+            <input type="text" id="email" name="email" title="The email address is invalid." pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
+                required> <br>
+            <label for="phone">Phone</label><br>
+            <input type="text" id="phone" name="phone" pattern="[0-9]{8}"><br><br>
+            <label for="password">Password*</label>
+            <input type="text" id="password" name="password" minlength="5" maxlength="12" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                required><br><br>
+            <label for="repassword">Re-enter Password*</label>
+            <input type="repassword" id="repassword" name="repassword" minlength="5" maxlength="12" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                required><br>
+            <p>I want to sing up for the newsletter</p>
+            <div>
+                <label for="week">Weekly news</label>
+                <input type="radio" id="week" name="period" value="weekly-news" required>
+                <label for="monthly">Monthly news</label>
+                <input type="radio" id="monthly" name="period" value="Monthly-news">
+                <label for="no-news">Don`t send me news</label>
+                <input type="radio" id="no-news" name="period" value="Don`t-send">
+            </div>
+
+            <a href="index3page2.html"></a>
+            <input type="submit" class="button" value="Next">
+            </a>
+
+
+            </footer>
+        </form>
+    </mian>
+
+</body>

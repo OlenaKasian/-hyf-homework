@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="https://raw.githubusercontent.com/OlenaKasian/hyf-homework/master/html-css/week3/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="3homework.css">
+    <script src="3homework.js"></script>
+    <title>Home work-week3-Olena Kasiianenko</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/Earlybirds.png" alt="Icon Earlybirds">
+        <nav class="navigation">
+            <ul>
+                <li><a href="index3.html">Step 1</a></li>
+                <li><a href="index3page2.html">Step 2</a></li>
+                <li><a href="index3page3.html">Step 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Sign up to yourcustomtailor.com</h3>
+        <p>We can’t wait to help you improve your life-style and gain the attention from people around you!</p>
+        <p>Sign up below to save up to 70% on apparel, hand-bags and cosmetics.
+            Our agents are busy picking the best offers that match your preferences and style.
+            Every week we will send you a hand-picked selection -
+            we just need to know a few details about your first…</p>
+    </section>
+    <aside>
+        <h3>Step 1/4 - tell us who you are?</h3>
+        <p>Progress</p>
+        <div class="progress"><span id="SA" style="width: 25%"></span></div>
+        <p>Nice to meet you. Let's spend a minute to get to know each other? Please enter the following:</p>
+        <form action="abc.php" method="get">
+            <label for="fname">First name*</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last name*</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="country">Country*</label>
+            <select name="country" id="country" required>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Canada">Canada</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Finland">Finland</option>
+            </select>
+            <br>
+            <label for="street address">Street address*</label><br>
+            <input type="text" id="stadress" name="stadress" required><br>
+            <label for="post code">Post code*</label><br>
+            <input type="text" id="post-code" name="post-code" minlength="4" maxlength="4" required><br>
+            <label for="description">Profile description
+                <p>Please provide a short description of yourself to be displayed on our social community pages.</p>
+            </label>
+            <textarea id="description" name="description" rows="4" cols="50" maxlength="500">
+            </textarea>
+            <footer>
+                <div>
+                    <p>Use the same address for billing and shipping? Uncheck below to fill out a seperate shipping
+                        address
+                    </p>
+                    <input type="checkbox" name="shipping" id="shipping_ad" onclick="myFunction()" required>
+                    <label for="shipping_ad" class="lable_ship">Shipping address</label>
+                    <a>
+                </div>
+
+
+                <div id="afterclick" style="display:none"> <label for="fname">First name*</label><br>
+                    <input type="text" id="fname" name="fname" required><br>
+                    <label for="lname">Last name*</label><br>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="country">Country*</label>
+                    <select name="country" id="country" required>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Finland">Finland</option>
+                    </select>
+                    <br>
+                    <label for="street address">Street address*</label><br>
+                    <input type="text" id="stadress" name="stadress"><br>
+                    <label for="post code">Post code*</label><br>
+                    <input type="text" id="post-code" name="post-code"><br>
+                    <label for="description">Profile description
+                        <p>Please provide a short description of yourself to be displayed on our social community
+                            pages.</p>
+                    </label>
+                    <textarea id="description" name="description" rows="4" cols="50">
+                    </textarea> </div>
+                <a href="index3page2.html"></a>
+                    <input type="submit" class="button" value="Next">
+                </a>
+
+            </footer>
+        </form>
+    </aside>
+
+</body>
