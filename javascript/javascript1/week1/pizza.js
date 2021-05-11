@@ -6,19 +6,19 @@ console.log(`The Price of the Pizza is: ${pizzaPrice}`);
 
 // 2part of exersice
 
-const NumPizza = 3;
-let strFamily;
+const numPizza = 3;
+let sizeFamily;
 let totalPrice;
-totalPrice = (pizzaPrice * NumPizza);
+totalPrice = pizzaPrice * numPizza;
 
-if (strFamily = true) {
-    strFamily = "family size";
+if (sizeFamily === true) {
+    sizeFamily = "family size";
     totalPrice *= 2;
-    console.log(`New pizza order: ${NumPizza} ${strFamily} ${favPizza}. Total cost for the order is: ${totalPrice}`);
+    console.log(`New pizza order: ${numPizza} ${sizeFamily} ${favPizza}. Total cost for the order is: ${totalPrice}`);
 }
 
 else {
-    strFamily = "usual size";
-    console.log(`New pizza order: ${NumPizza} ${strFamily} ${favPizza}. Total cost for the order is: ${totalPrice}`);
+    sizeFamily = "usual size";
+    console.log(`New pizza order: ${numPizza} ${sizeFamily} ${favPizza}. Total cost for the order is: ${totalPrice}`);
 }
 
