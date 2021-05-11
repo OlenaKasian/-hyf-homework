@@ -1,32 +1,30 @@
 //For Peter
-const Pwide = 8;
-const Pdeep = 10;
-const Phigh = 10;
-let PvolumeInMeters;
-PvolumeInMeters = Pwide * Pdeep * Phigh;
-const PgardenSizeInM2 = 100;
-const PhouseCosts = 2500000;
-let PhousePrice;
-PhousePrice = PvolumeInMeters * 2.5 * 1000 + PgardenSizeInM2 * 300;
-if (PhouseCosts => PhousePrice) {
-    console.log(`Peter\`s price ${PhousePrice} is too much`)
+const peterwide = 8;
+const peterdeep = 10;
+const peterhigh = 10;
+const PvolumeInMeters = peterwide * peterdeep * peterhigh;
+const petergardenSizeInM2 = 100;
+const peterhouseCosts = 2500000;
+let peterhousePrice;
+peterhousePrice = petervolumeInMeters * 2.5 * 1000 + petergardenSizeInM2 * 300;
+if (peterhouseCosts >= peterhousePrice) {
+    console.log(`Peter\`s price ${peterhousePrice} is too much`)
 }
 else {
-    console.log(`Peter\`s ${PhousePrice} price is too little`)
+    console.log(`Peter\`s ${peterhousePrice} price is too little`)
 }
 
 //For Julia
-const Jwide = 5;
-const Jdeep = 11;
-const Jhigh = 8;
-let JvolumeInMeters = Jwide * Jdeep * Jhigh;
-const JgardenSizeInM2 = 70;
-const JhouseCosts = 1000000;
-let JhousePrice;
-JhousePrice = JvolumeInMeters * 2.5 * 1000 + JgardenSizeInM2 * 300;
-if (JhouseCosts => JhousePrice) {
-    console.log(`Julia\`s price ${JhousePrice} is too much`)
+const juliawide = 5;
+const juliadeep = 11;
+const juliahigh = 8;
+let juliavolumeInMeters = juliawide * juliadeep * juliahigh;
+const juliagardenSizeInM2 = 70;
+const juliahouseCosts = 1000000;
+let juliahousePrice = juliavolumeInMeters * 2.5 * 1000 + juliagardenSizeInM2 * 300;
+if (juliahouseCosts >= juliahousePrice) {
+    console.log(`Julia\`s price ${juliahousePrice} is too much`)
 }
 else {
-    console.log(`Julia\`s price ${JhousePrice} is too little`);
+    console.log(`Julia\`s price ${juliahousePrice} is too little`);
 }
