@@ -1,5 +1,5 @@
 console.log('=============================')
-let amountToSpend = Math.random() * 100;
+const amountToSpend = Math.random() * 100;
 console.log(`Available money is ${amountToSpend}`)
 
 let boughtCandyPrices = [];

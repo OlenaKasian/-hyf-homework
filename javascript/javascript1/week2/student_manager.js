@@ -1,6 +1,9 @@
 let class07Students = [];
 
 function addStudentToClass(studentName) {
+  if (!studentName) {
+    console.log('Please enter a valid name')
+  }
   if (class07Students.length >= 6 && studentName !== 'Queen') {
     console.log('Cannot add more students to the class 07');
     return;
@@ -13,10 +16,8 @@ function addStudentToClass(studentName) {
     console.log(`Student ${studentName} is already in the class`);
     return;
   }
-
   class07Students.push(studentName);
   console.log(`Student ${studentName} is added to the class`);
-
 }
 
 function getNumberOfStudents() {

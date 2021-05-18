@@ -1,12 +1,11 @@
-
 function getFullname(firstName, surName, useFormalName, isMaleGander) {
     let fullName = firstName + ' ' + surName;
-    if (useFormalName === true) {
-        if (isMaleGander === true) {
-            fullName = "Lord" + ' ' + fullName;
+    if (useFormalName) {
+        if (isMaleGander) {
+            fullName = 'Lord' + ' ' + fullName;
         }
         else {
-            fullName = "Mrs" + ' ' + fullName;
+            fullName = 'Mrs' + ' ' + fullName;
         }
     }
     return fullName;
@@ -21,6 +20,3 @@ console.log(fullName1);
 console.log(fullName2);
 console.log(fullName3);
 console.log(fullName4);
-
-
-
