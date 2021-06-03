@@ -28,8 +28,8 @@ function logOutSeriesText(films, lifeTimeYers) {
     let lifeTimeMinutes = lifeTimeYers * 365 * 24 * 60;
 
     for (const film of films) {
-        let filmTimeMinutes = film.days * 24 * 60 + film.hours * 60 + film.minutes;
-        let filmPercentage = (filmTimeMinutes / lifeTimeMinutes) * 100;
+        const filmTimeMinutes = film.days * 24 * 60 + film.hours * 60 + film.minutes;
+        const filmPercentage = (filmTimeMinutes / lifeTimeMinutes) * 100;
         console.log(`${film.title} took ${filmPercentage.toFixed(3)}% of my life`);
 
         totalTimeMinutes += filmTimeMinutes;

@@ -1,6 +1,6 @@
 console.log(`======cactusIO=====`);
 const durationLimit = 120;
-let activities = [];
+const activities = [];
 
 function addActivity(date, activity, duration) {
     const newActivites = { date: date, activity: activity, duration: duration };
@@ -10,13 +10,12 @@ function addActivity(date, activity, duration) {
 function showStatus() {
     const numbersOfActiveties = activities.length;
     if (numbersOfActiveties === 0) {
-        console.log("Add some activities before calling showStatus");
-        return;
+        return console.log("Add some activities before calling showStatus");
     }
     let totalDuration = 0;
     activities.forEach(activity => totalDuration += activity.duration);
     console.log(`You have added ${numbersOfActiveties} activities. They amount to ${totalDuration} min. of usage`);
-    
+
     if (totalDuration > durationLimit) {
         console.log(`You have reached ${durationLimit} minits limit, no more smartphoning for you!`);
     }

@@ -2,7 +2,7 @@ console.log('==========Note==========');
 const notes = [];
 
 function saveNote(content, id) {
-    let notesObject = { content: content, id: id }
+    const notesObject = { content: content, id: id }
     notes.push(notesObject);
 }
 
@@ -15,7 +15,8 @@ function getNote(id) {
             return notes[i];
         }
     }
-    return `Choose available number`;
+    console.log(`Item with ID ${id} not found`);
+    return;
 }
 
 console.log(notes);
@@ -25,7 +26,7 @@ console.log(getNote(7));
 
 function logOutNotesFormatted() {
     for (let i = 0; i < notes.length; i++) {
-        console.log(notes[i]);
+        console.log(`The note with ${notes[i].id} has the following note text: ${notes[i].content}`);
     }
 }
 logOutNotesFormatted();
