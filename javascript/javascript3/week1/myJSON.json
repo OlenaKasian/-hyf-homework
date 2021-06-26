@@ -1,0 +1,66 @@
+{
+    "food": [
+        {
+            "vegetable": {
+                "Cabbage": {
+                    "Carbohydrates": {
+                        "value": "g",
+                        "Carbohydrates": 5.8,
+                        "Sugars": 3.2,
+                        "Dietary fiber": 2.5
+                    },
+                    "Fat": 0.1,
+                    "Protein": 1.28,
+                    "Vitamins": {
+                        "Thiamine (B1)": "0.061 mg",
+                        "Riboflavin (B2)": "0.040 mg",
+                        "Niacin (B3)": "0.234 mg",
+                        "Pantothenic acid (B5)": "0.212 mg",
+                        "Vitamin B6": "0.124 mg",
+                        "Folate (B9)": "43 μg",
+                        "Vitamin C": "36.6 mg",
+                        "Vitamin K": "76 μg"
+                    },
+                    "energy": "103 kJ (25 kcal)"
+                },
+                "Potato": {
+                    "Carbohydrates": {
+                        "value": "g",
+                        "Carbohydrates": 90,
+                        "Sugars": 4,
+                        "Dietary fiber": 10
+                    },
+                    "Energy": "1698kJ",
+                    "Protein": "10.4g",
+                    "Fat": "44-77g",
+                    "Vitamins": {
+                        "value": "% of the RDI",
+                        "Vitamin C": 28,
+                        "Vitamin B6": 27,
+                        "Potassium": 26,
+                        "Manganese": 19,
+                        "Magnesium": 12,
+                        "Phosphorus": 12,
+                        "Niacin": 12,
+                        "Folate": 12
+                    }
+                }
+            },
+            "meat": {
+                "pork": {
+                    "Calories": 122,
+                    "Fat": "3g",
+                    "Sodium": "48mg",
+                    "Carbohydrates": "0g",
+                    "Protein": "22g"
+                },
+                "breef": {
+                    "Calories": 217,
+                    "Protein": "26.1g",
+                    "Carbohydrates": "0g",
+                    "Fat": "11.8g"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "data": {
+      "id": 48437714,
+      "url": "ghostinspector",
+      "bio": null,
+      "avatar": null,
+      "reputation": 0,
+      "reputation_name": "Neutral",
+      "created": 1481839668,
+      "pro_expiration": false,
+      "user_follow": {
+        "status": false
+      }
+    },
+    "success": true,
+    "status": 200
+  }
+
+  //This example of JSON document with object data type wich includs null, 
+  //boolien, string and number parametrs. There are 3 object fields: data, success,
+  //status.

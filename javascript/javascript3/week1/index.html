@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <h1>Weather App</h1>
+    <!--loding text -->
+    <div class="loading"><img src="Spinner-3.gif" alt="Loading..."> </div>
+
+    <input type="text">
+    <button class="main-button">Click me!</button>
+    <div class="cityCl"> </div>
+    <div class="temperatureCl"> </div>
+    <img class="iconForTheWeatherTypeCl"></img>
+    <div class="windSpeedCl"></div>
+    <div class="howClowdyItIsCl"></div>
+    <div class="whenSunriseAndSunsetIsCl"> </div>
+    <div class="optionalAapLocatedCl">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72000.64910968115!2d12.523784576521374!3d55.67124741356067
+            !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652530df9af1805%3A0x44b329679d55715c!2sCopenhagen%20City%20Hall!5e0!3m2!
+            1sen!2sdk!4v1618393802243!5m2!1sen!2sdk" width="200" height="200"> </iframe>
+    </div>
+
+    <!-- My feature -->
+    <button class="myFeature">Tomorrow weather</button>
+
+    <!-- Geolocation -->
+    <button id="find-me">Show my location</button><br />
+    <p id="status"></p>
+    <a id="map-link" target="_blank"></a>
+    <script src="weather-app.js"></script>
+</body>
+</html>
