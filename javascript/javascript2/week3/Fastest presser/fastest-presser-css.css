@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    background: silver;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: rgb(6, 128, 228);
+}
+
+input {
+    padding : 5px;
+}
+button {
+    padding : 5px;
+    background: rgb(155, 221, 243);
+}
+
+.vertical-line {
+    position: absolute;
+    left: 50%;
+    height: 50%;
+    width: 1px;
+    background: black;
+}
+
+#Splayer {
+    float: left;
+    margin-left: 30px;
+    padding: 5px;
+}
+
+#Sresult {
+    float: left;
+    margin-left: 30px;
+    padding: 5px;
+}
+
+#Lplayer {
+    float: right;
+    margin-right: 30px;
+    padding: 5px;
+}
+
+#Lresult {
+    float: right;
+    margin-right: 30px;
+    padding: 5px;
+}
