@@ -58,20 +58,32 @@ WHERE
 
 -----/*School database*/------
 
-/*Create a new database containing the following tables:
-Class: with the columns: id, name, begins (date), ends (date)
-Student: with the columns: id, name, email, phone, class_id (foreign key)*/
+  /*Create a new database containing the following tables:
+    Class: with the columns: id, name, begins (date), ends (date)
+    Student: with the columns: id, name, email, phone, class_id (foreign key)*/
+  CREATE TABLE class (
+    `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR (255) NOT NULL,
+    `begins` DATETIME NOT NULL,
+    `ends` DATETIME NOT NULL,
+    PRIMARY KEY (`id`),
+  );
+CREATE TABLE `student` (
+    `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR (255) NOT NULL,
+    `email` VARCHAR (255) NOT NULL,
+    `phone` VARCHAR (20) NOT NULL,
+    CONSTRAINT `fk_class` FOREIGN KEY (`class_id`) REFERENCES `class` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 
-CREATE Table class (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, begins date, ends date); 
-CREATE Table student (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT, phone TEXT, 
-FOREIGN KEY (id) REFERENCES student(class_id);
+    /*If you are done with the above tasks, you can continue with these advanced tasks:
+        Create an index on the name column of the student table.*/
 
-/*If you are done with the above tasks, you can continue with these advanced tasks:
-Create an index on the name column of the student table.
-Add a new column to the class table named status which can only have the following values:
-not-started, ongoing, finished (hint: enumerations).*/
-CREATE INDEX idx_name ON student (name)
-ALTER TABLE
-  class
-ADD
-  status ENUM('not-started', 'ongoing', 'finished');
+   CREATE UNIQUE INDEX idx_name ON `student` (name);
+    /*Add a new column to the class table named status which can only have the following values:
+        not-started, ongoing, finished (hint: enumerations).*/
+
+    ALTER TABLE
+      class
+    ADD
+      status ENUM('not-started', 'ongoing', 'finished');

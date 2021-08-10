@@ -1,30 +1,30 @@
+CREATE TABLE `autor` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(255) NOT NULL,
+  `Bday` DATE NOT NULL,
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 CREATE TABLE `book` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `title` varchar(255) NOT NULL,
-  `pages` varchar(255) NOT NULL,
-  `publication` varchar(255) NULL,
-  `genres` varchar(255) NULL,
-  `languages` varchar(255) NULL,
+  `title` VARCHAR(255) NOT NULL,
+  `pages` int unsigned NOT NULL,
+  `publication` VARCHAR(255) NULL,
+  `genres` VARCHAR(255) NULL,
+  `languages` VARCHAR(255) NULL,
   `autor_id` int(10) unsigned NOT NULL,
   CONSTRAINT `fk_autor` FOREIGN KEY (`autor_id`) REFERENCES `autor` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
-CREATE TABLE `autor` (
+
+CREATE TABLE `location` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `name` varchar(255) NOT NULL,
-  `Bday` varchar(255) NOT NULL
+  `floor` int(35) unsigned NOT NULL,
+  `room` int unsigned NOT NULL,
+  `racks` VARCHAR(255) NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
-CREATE TABLE `situated` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `floor` varchar(255) NOT NULL,
-  `room` varchar(255) NOT NULL,
-  `racks` varchar(255) NULL
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
-CREATE TABLE `autor_situated` (
+CREATE TABLE `autor_location` (
   `autor_id` int(10) unsigned NOT NULL,
-  `situated_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY(`autor_id`, `situated_id`),
-  CONSTRAINT `fk_autor_situated_autor` FOREIGN KEY (`autor_id`) REFERENCES `autor` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `fk_autor_situated_situated` FOREIGN KEY (`situated_id`) REFERENCES `situated` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  `location_id` int(10) unsigned NOT NULL,
+  CONSTRAINT `fk_autor_location_autor` FOREIGN KEY (`autor_id`) REFERENCES `autor` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_autor_location_situated` FOREIGN KEY (`location_id`) REFERENCES `location` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 ----book----
 INSERT INTO
@@ -70,23 +70,23 @@ VALUES
   ------autor-----
 INSERT INTO
   autor (id, name, Bday)
-VALUES(1, 'Jane Austen', 1775);
+VALUES(1, 'Jane Austen', 1775-06-29);
 INSERT INTO
   autor (id, name, Bday)
-VALUES(2, 'L. P. Hartley', 1935);
------situated-----
+VALUES(2, 'L. P. Hartley', 1935-08-12);
+-----location-----
 INSERT INTO
-  situated (id, floor, room, racks)
+  location (id, floor, room, racks)
 VALUES
-  (1, 2, 312, 1);
+  (1, 2, 312, '1-green');
 INSERT INTO
-  situated (id, floor, room, racks)
+  location (id, floor, room, racks)
 VALUES
-  (2, 2, 312, 3);
-  ----autor_situated-----
+  (2, 2, 312, '3-red');
+  ----autor_location-----
 INSERT INTO
-  autor_situated (autor_id, situated_id)
+  autor_location (autor_id, location_id)
 VALUES(1, 1);
 INSERT INTO
-  autor_situated (autor_id, situated_id)
+  autor_location (autor_id, location_id)
 VALUES(2, 2);
