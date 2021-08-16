@@ -30,7 +30,7 @@ CREATE TABLE `review` (
     `meal_id` INT(10) UNSIGNED NOT NULL,
     `stars` INT (10),
     `created_date` DATE,
-    CONSTRAINT `fk_meal` FOREIGN KEY (meal_id) REFERENCES meal (id) ON DELETE CASCADE
+    CONSTRAINT `fk_meal_review` FOREIGN KEY (meal_id) REFERENCES meal (id) ON DELETE CASCADE
   );
 INSERT INTO
   meal (
@@ -72,7 +72,6 @@ values
   );
 INSERT INTO
   reservation (
-    `id`,
     `number_of_guests`,
     `meal_id`,
     `created_date`,
@@ -128,8 +127,13 @@ VALUES
     '4',
     '2021-03-08'
   ),
-  ('good', 'good taste', '3', '3', '2021-03-08');
-  
+  (
+    'good',
+    'good taste',
+    '3',
+    '3',
+    '2021-03-08'
+  );
 ------Queries-----
   -----meal queries-----
   ---Get all meals---
@@ -169,7 +173,7 @@ UPDATE
   meal
 SET
   title = 'cheese set',
-  descriptions = '4 kind of cheese'
+  description = '4 kind of cheese'
 WHERE
   id = 1;
 ---Delete a meal with any id, fx 1---
@@ -214,7 +218,7 @@ WHERE
 UPDATE
   reservation
 SET
-  number_of_guests = 4,
+  number_of_guests = 4
 WHERE
   id = 3;
 ---Delete a reservation with any id, fx 1---
@@ -244,8 +248,8 @@ VALUES
     '4',
     '5',
     '2021-03-08'
-  ),
-  ---Get a review with any id, fx 1---
+  );
+---Get a review with any id, fx 1---
 SELECT
   *
 FROM
@@ -268,6 +272,8 @@ WHERE
 ----Additional queries----
   ---Get meals that has a price smaller than a specific price fx 90--
 SELECT
+  *
+FROM
   meal
 WHERE
   price < 90
