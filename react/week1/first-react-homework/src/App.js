@@ -7,8 +7,7 @@ function App() {
     <div className="to-do-list">
       <header className="App-header">
         <h1> To do list:</h1>
-       <TodoList />
-        
+        <TodoList />
       </header>
     </div>
   );
