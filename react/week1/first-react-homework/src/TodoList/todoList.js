@@ -4,7 +4,7 @@ import TodoItem from './todoItem'
 function TodoList() {
     return <div>
         <ul>
-            {TodoItem().map(todo => <TodoListItem id={todo.id} description={todo.description} date={todo.date} />)}
+            {TodoItem().map(todo => <TodoListItem key={todo.id} id={todo.id} description={todo.description} date={todo.date} />)}
         </ul>
     </div>
 }
