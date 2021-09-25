@@ -1,0 +1,23 @@
+.to-do-list {
+  text-align: center;
+  background-color: #dcf3c7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(10, 10, 10);
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  padding: 1px;
+  border: 1ex solid green;
+  border-radius: 2px;
+
+}
+
